@@ -16,7 +16,7 @@ public class PO02_Dashboard {
     @FindBy(css = "i[class='close icon']")
     WebElement CloseIcon;
 
-    @FindBy(xpath = "//b[contains(text(),'Test Companyname')]")
+    @FindBy(xpath = "//b[contains(text(),'Test Company')]")
     WebElement TextPresentOnDashboardScreen;
 
 
