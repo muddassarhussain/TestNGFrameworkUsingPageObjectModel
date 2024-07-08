@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.BDD</groupId>
+    <artifactId>TestNGFrameworkUsingPageObjectModel</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.21.0</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>5.3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.3.0</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- 1-You need download and install Java //C:Program Files/Java
+         2-You need to download and install Apache Maven setup //C:Program Files/Maven
+         3-You need to add Env Variables for both Java and Maven
+         4-You need to add Selenium Dependency
+         5-You need to add WebDriverManager Dependency
+         6-You need to Add TestNG Dependnncy
+         7-You need to add ExtentReport from mvnrepository com.aventstack
+         8-You need to add Apachi POI from mvnrepository org.apache.poi » poi
+         9-You need to add Apachi POI OOXML from mvnrepository org.apache.poi » poi-ooxml
+    -->
+
+    <!-- How to create Framework?
+        1-Create Maven Project and Add above dependencies
+        2-Create required folders (Reports, Screenshots, XML Files, Test Data, Configurations)
+        3-Add 3 PKGs in src/test/java with name (com.Pages, com.TestCases, com.Utility)
+        4-Create BrowserFactory class in utility pkg and add browser launching code there.
+        5-Create test class in TestCases pkg and directly call the method from utility pkg.
+        6-Create page class in Pages pkg and create constructor for each class
+        7-Add FindBy elements in each page class
+   -->
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
